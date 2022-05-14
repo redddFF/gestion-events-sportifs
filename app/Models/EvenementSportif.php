@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class EvenementSportif extends Model
 {
     use HasFactory;
+    protected $perPage=4 ; 
         public function organisateur(){
             return $this->belongsTo(User::class);
         }
